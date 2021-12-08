@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - G191210046</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap/dist/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/lib/bootstrap/dist/css/swiper.css" rel="stylesheet">
+    <link href="/lib/bootstrap/dist/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="/lib/bootstrap/dist/images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="/lib/bootstrap/dist/images/logo.svg" alt="alternative"></a>
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Elma</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="h1-large">PLAN<br> DESIGN<br> DEVELOP</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="button-container">
+                        <a class="btn-solid-lg page-scroll" href="#intro">Discover</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact">Contact</a>
+                    </div> <!-- end of button-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - G191210046 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="/lib/bootstrap/dist/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="/lib/bootstrap/dist/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="/lib/bootstrap/dist/js/scripts.js"></script> <!-- Custom scripts -->
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
