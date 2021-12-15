@@ -165,3 +165,9 @@ C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\I
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\User\Views\Index.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Create.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Delete.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Details.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Edit.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Index.cshtml.g.cs
