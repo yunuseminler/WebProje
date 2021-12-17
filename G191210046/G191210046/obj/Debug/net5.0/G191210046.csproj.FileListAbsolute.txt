@@ -171,3 +171,13 @@ C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\A
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Details.cshtml.g.cs
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Edit.cshtml.g.cs
 C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Urun\Index.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Views\Siparis\Create.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Views\Siparis\Delete.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Views\Siparis\Details.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Views\Siparis\Edit.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Views\Siparis\Index.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dukkan\Create.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dukkan\Delete.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dukkan\Details.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dukkan\Edit.cshtml.g.cs
+C:\Users\Yunus Emre\Desktop\G191210046\G191210046\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dukkan\Index.cshtml.g.cs
