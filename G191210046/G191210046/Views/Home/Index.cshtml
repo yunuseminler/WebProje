@@ -14,7 +14,7 @@
                 }
                 else
                 {
-                    <h1 class="h1-large">Merhaba<br />UT'ya<br> HOŞGELDİNİZ</h1>
+                    <h1 class="h1-large">@lang["h1"]<br />@lang["h2"]<br> @lang["h3"]</h1>
                     <p style="color: #7dc22b; font-size: 20px;">Devam etmek için lütfen giriş yapınız veya kayıt olunuz.</p>
                 }
             </div> <!-- end of col -->
@@ -22,8 +22,8 @@
                 <div class="button-container">
                     @if (!(SignInManager.IsSignedIn(User)))
                     {
-                        <a class="btn-solid-lg page-scroll" asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
-                        <a class="btn-outline-lg page-scroll" asp-area="Identity" asp-page="/Account/Register">Kayıt Ol</a>
+                    <a class="btn-solid-lg page-scroll" asp-area="Identity" asp-page="/Account/Login">@lang["Sign"]</a>
+                    <a class="btn-outline-lg page-scroll" asp-area="Identity" asp-page="/Account/Register">@lang["Register"]</a>
                     }
 
                 </div> <!-- end of button-container -->

@@ -46,16 +46,16 @@ namespace G191210046.Data
 
             _userManager.CreateAsync(new ApplicationUser
             {
-                UserName = "admin@gmail.com",
-                Email = "admin@gmail.com",
+                UserName = "g191210046@gmail.com",
+                Email = "G191210046@gmail.com",
                 Ad = "Yunus Emre",
                 Soyad="Eminler",
                 EmailConfirmed = true,
                 PhoneNumber = "1112223333"
-            }, "Admin123*").GetAwaiter().GetResult();
+            }, "123").GetAwaiter().GetResult();
 
 
-            _userManager.AddToRoleAsync(_db.Users.FirstOrDefaultAsync(u => u.Email == "admin@gmail.com").GetAwaiter().GetResult(), "Admin").GetAwaiter().GetResult();
+            _userManager.AddToRoleAsync(_db.Users.FirstOrDefaultAsync(u => u.Email == "g191210046@gmail.com").GetAwaiter().GetResult(), "Admin").GetAwaiter().GetResult();
 
         }
     }

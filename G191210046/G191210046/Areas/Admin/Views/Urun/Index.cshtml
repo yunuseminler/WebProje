@@ -4,47 +4,52 @@
     ViewData["Title"] = "Index";
 }
 
+<header id="header" class="header">
+    <div class="container">
+        <div class="container">
+            <h1 style="color: white;">Ürünler</h1>
 
-
-        <h1>Index</h1>
-
-        <p>
-            <a asp-action="Create">Create New</a>
-        </p>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Ad)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fiyat)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Aciklama)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+            <p>
+                <a style="color: white;" asp-action="Create">Create New</a>
+            </p>
+            <table style="border-color: white" class="table">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Ad)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Fiyat)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Aciklama)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                        </td>
+                        <th style="color: white;">
+                            @Html.DisplayNameFor(model => model.Ad)
+                        </th>
+                        <th style="color: white;">
+                            @Html.DisplayNameFor(model => model.Fiyat)
+                        </th>
+                        <th style="color: white;">
+                            @Html.DisplayNameFor(model => model.Aciklama)
+                        </th>
+                        <th></th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td style="color: white;">
+                                @Html.DisplayFor(modelItem => item.Ad)
+                            </td>
+                            <td style="color: white;">
+                                @Html.DisplayFor(modelItem => item.Fiyat)
+                            </td>
+                            <td style="color: white;">
+                                @Html.DisplayFor(modelItem => item.Aciklama)
+                            </td>
+                            <td>
+                                <a style="color: darkred;" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                <a style="color: darkred;" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                <a style="color: darkred;" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+</header>
+

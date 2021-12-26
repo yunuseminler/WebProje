@@ -4,12 +4,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,11 +29,19 @@ namespace G191210046
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentity<IdentityUser, IdentityRole>()
-               .AddDefaultTokenProviders()
-               .AddDefaultUI()
-               .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
 
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 2;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = false;
+            })
+              .AddDefaultTokenProviders()
+              .AddDefaultUI()
+              .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -57,6 +67,17 @@ namespace G191210046
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            var supportedCultures = new[]{
+                new CultureInfo("tr-TR"),
+                new CultureInfo("en-Us")
+            };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("tr-TR"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
 
             dbInitializer.Initialize();
 

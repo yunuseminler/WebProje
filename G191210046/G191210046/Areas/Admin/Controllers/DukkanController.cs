@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using G191210046.Data;
 using G191210046.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace G191210046.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class DukkanController : Controller
     {
         private readonly ApplicationDbContext _context;

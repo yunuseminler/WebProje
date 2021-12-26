@@ -319,6 +319,14 @@
         "runtime": {
           "G191210046.dll": {}
         },
+        "resources": {
+          "en-US/G191210046.resources.dll": {
+            "locale": "en-US"
+          },
+          "tr-TR/G191210046.resources.dll": {
+            "locale": "tr-TR"
+          }
+        },
         "compile": {
           "G191210046.dll": {}
         }

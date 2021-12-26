@@ -1,0 +1,49 @@
+﻿@model IEnumerable<G191210046.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<header id="header" class="header">
+    <div class="container">
+        <h1 style="color: white;">Hesap</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="color: white;">
+                        @Html.DisplayNameFor(model => model.Ad)
+                    </th>
+                    <th style="color: white;">
+                        @Html.DisplayNameFor(model => model.Soyad)
+                    </th>
+                    <th style="color: white;">
+                        @Html.DisplayNameFor(model => model.TelNo)
+                    </th>
+                    <th style="color: white;">
+                        @Html.DisplayNameFor(model => model.Adres)
+                    </th>
+                    <th style="color: white;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="color: white;">
+                            @Html.DisplayFor(modelItem => item.Ad)
+                        </td>
+                        <td style="color: white;">
+                            @Html.DisplayFor(modelItem => item.Soyad)
+                        </td>
+                        <td style="color: white;">
+                            @Html.DisplayFor(modelItem => item.TelNo)
+                        </td>
+                        <td style="color: white;">
+                            @Html.DisplayFor(modelItem => item.Adres)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</header>

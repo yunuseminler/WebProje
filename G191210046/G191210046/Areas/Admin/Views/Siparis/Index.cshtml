@@ -1,0 +1,59 @@
+﻿@model IEnumerable<G191210046.Models.Siparis>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<header id="header" class="header">
+    <div class="container">
+        <h1 style="color: white;">Siparişler</h1>
+
+        <table class="table">
+            <thead>
+                <tr style="color: white;">
+                    <th>
+                        @Html.DisplayNameFor(model => model.ToplamUcret)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SiparisTarihi)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SiparisDurumu)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SiparisKodu)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Aciklama)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr style="color: white;">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ToplamUcret)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SiparisTarihi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SiparisDurumu)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SiparisKodu)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Aciklama)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</header>
